@@ -1,0 +1,50 @@
+/* Custom smooth transition elements */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.4s ease-out, transform 1.4s ease-out;
+}
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Floating animations */
+@keyframes float {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-8px) rotate(2deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Subtle glow for royal elements */
+.gold-glow {
+    text-shadow: 0 0 12px rgba(212, 178, 111, 0.4);
+}
+
+/* Elegant Javanese Golden Scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #0B0B0B;
+}
+::-webkit-scrollbar-thumb {
+    background: #D4B26F;
+    border-radius: 3px;
+}
+
+/* Ultra premium Dark Glassmorphism */
+.glassmorphism-dark {
+    background: rgba(22, 21, 19, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(212, 178, 111, 0.15);
+}
+
+/* Gold gradient outline */
+.gold-border-gradient {
+    border-image: linear-gradient(to bottom right, #D4B26F, #161513, #9A7B43) 1;
+}
